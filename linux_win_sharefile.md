@@ -1,14 +1,14 @@
 
-#### linux与windows之间的文件共享方法
+### linux与windows之间的文件共享方法
 
 1. 查看各自ip linux`ifconfig` win`ipconfig`
 
 2. 设置winsows的host 
 
-在`C:\\Windows\System32\drivers\etc\hosts`中添加`linux_IP ubuntu1610.localhost ubuntu1016`
-这里的`ubuntu1610`是后面在samba里的netbios name里设置的，可以任意
+   在`C:\\Windows\System32\drivers\etc\hosts`中添加`linux_IP ubuntu1610.localhost ubuntu1016`
+   这里的`ubuntu1610`是后面在samba里的netbios name里设置的，可以任意
 
-打开cmd 运行一下命令，打开防火墙和网络发现
+   打开cmd 运行一下命令，打开防火墙和网络发现
 
 ```
 netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
@@ -64,3 +64,6 @@ sudo chmod -R 0775 /samba/public
 **重启samba**
 
 `sudo service smbd restart`
+
+**关闭linux 防火墙**
+`ufw disable` 
