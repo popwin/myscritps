@@ -14,9 +14,9 @@
 # Shadow=0
 # MarginL=5 距离画面左面的距离
 
-inputFile='摩斯探长前传.Endeavour.S04E02.HDTV720P.冰冰字幕组.内嵌字幕.mp4'
-filename2='[BBC亨利八世的六个妻子].Six.Wives.of.Henry.VIII.1of4.Catherine.Of.Aragon.srt'
-filename1='[BBC亨利八世的六个妻子].Six.Wives.of.Henry.VIII.1of4.Catherine.of.Aragon(英).srt'
+inputFile='xxxx.mp4'
+filename2='xxxx.srt'
+filename1='[xxx(en).srt'
 
 subname='subs.srt'
 
