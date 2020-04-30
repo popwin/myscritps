@@ -65,5 +65,12 @@ sudo chmod -R 0775 /samba/public
 
 `sudo service smbd restart`
 
+**关闭samba**
+当不需要使用互传文件时，可以关闭smbd
+
+`sudo systemctl disable smbd` 禁止开机重启
+
+`sudo service smbd stop` 关闭samba
+
 **关闭linux 防火墙**
 `ufw disable` 
